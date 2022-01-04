@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def run(part=0):
     with open('../input/D5') as file:
         contents = file.readlines()
@@ -16,7 +17,6 @@ def run(part=0):
     zero_grid = []
     for i in range(x_max + 1):
         zero_grid.append([0] * (y_max + 1))
-
 
     if part == 1 or part == 0:
         grid = np.array(zero_grid)
@@ -73,7 +73,6 @@ def run(part=0):
                     if x_start > x_end:
                         break
         print('Part 2:', np.count_nonzero(grid > 1))
-
 
 
 if __name__ == '__main__':
