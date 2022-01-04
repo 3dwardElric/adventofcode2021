@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def run(part=0):
     with open('../input/D4') as file:
         contents = file.readlines()
@@ -104,6 +105,7 @@ def run(part=0):
             sum_unmarked_numbers += winning_board[index]
 
         print('Part 2:', sum_unmarked_numbers * winning_number)
+
 
 if __name__ == '__main__':
     run()
