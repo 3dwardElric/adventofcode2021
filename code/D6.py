@@ -20,10 +20,9 @@ def calculate_fishes(day):
             if d == 0:
                 old_6 = fishes[d]
                 new_8 = fishes[d]
-                fishes[d] = 0
             else:
                 fishes[d - 1] += fishes[d]
-                fishes[d] = 0
+            fishes[d] = 0
         fishes[6] += old_6
         fishes[8] += new_8
 
